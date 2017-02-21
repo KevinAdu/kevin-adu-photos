@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Helvetica";
+  text-align: center;
+  background: #f4f4f7;
+  color: #444;
+  margin: 0 auto;
+}
