@@ -1,0 +1,29 @@
+.project-card {
+  position: relative;
+  background-image: url("images/torii.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 48vh;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3.6rem;
+
+  &:nth-child(2n) {
+    float: right;
+  }
+}
+
+.project-description {
+  // text-align: right;
+}
+
+.project-card-title {
+  font-size: 3.583rem;
+}
+
+.project-card-sub-title {
+  font-size: 2.074rem;
+}
