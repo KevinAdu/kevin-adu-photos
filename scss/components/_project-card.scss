@@ -1,3 +1,5 @@
+// Add clearfix to section above
+
 .project-card {
   position: relative;
   height: 48vh;
@@ -9,12 +11,15 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:nth-child(2n) {
+    float: right;
+  }
 }
 
 .project-card-image {
   height: 100%;
   width: 100%;
-  background-image: url("images/torii.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -22,16 +27,36 @@
   flex-direction: column;
   justify-content: center;
   filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   &:hover {
     filter: none;
     transform: scale(1.2);
   }
+}
 
-  // &:nth-child(2n) {
-  //   float: right;
-  // }
+.project-tokyo {
+  .project-card-image {
+    background-image: url("images/tokyo-station.jpg");
+  }
+}
+
+.project-yokohama {
+  .project-card-image {
+    background-image: url("images/yokohama.jpg");
+  }
+}
+
+.project-hiroshima {
+  .project-card-image {
+    background-image: url("images/torii.jpg");
+  }
+}
+
+.project-hong-kong {
+  .project-card-image {
+    background-image: url("images/kowloon.jpg");
+  }
 }
 
 .project-description {
