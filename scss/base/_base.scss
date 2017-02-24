@@ -1,12 +1,18 @@
 html {
   box-sizing: border-box;
   font-size: 14px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
 
 body {
