@@ -2,19 +2,8 @@
 
 .project-card {
   position: relative;
-  height: 48vh;
-  width: 55%;
-  margin-bottom: 3.6rem;
   cursor: pointer;
   overflow: hidden;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &:nth-child(2n) {
-    float: right;
-  }
 }
 
 .project-card-image {
