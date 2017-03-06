@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   flex-direction: row;
 
-  > article {
+  > figure {
     height: 36vh;
     flex-basis: 100%;
     justify-content: center;
@@ -13,7 +13,7 @@
 
 @media (min-width: 700px) {
   .l-2-column-grid {
-    > article {
+    > figure {
       flex-basis: calc(50% - 3.6rem);
       margin: 1.8rem;
     }
