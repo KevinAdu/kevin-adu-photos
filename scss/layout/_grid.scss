@@ -5,9 +5,22 @@
 
   > article {
     height: 36vh;
-    flex-basis: calc(50% - 3.6rem);
+    flex-basis: 100%;
     justify-content: center;
     flex-direction: column;
-    margin: 1.8rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .l-2-column-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    > article {
+      height: 36vh;
+      flex-basis: calc(50% - 3.6rem);
+      margin: 1.8rem;
+    }
   }
 }
