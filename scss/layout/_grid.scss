@@ -13,14 +13,30 @@
 
 @media (min-width: 700px) {
   .l-2-column-grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
     > article {
-      height: 36vh;
       flex-basis: calc(50% - 3.6rem);
       margin: 1.8rem;
+    }
+  }
+}
+
+.l-3-column-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  > img {
+    height: 36vh;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 700px) {
+  .l-3-column-grid {
+    > img {
+      flex-basis: 33%;
     }
   }
 }
