@@ -2,7 +2,7 @@
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  background: #030c17;
+  background: $project-card-background-color;
   text-align: center;
 
   &:hover {
@@ -71,37 +71,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 2em;
+  padding: 3.6rem;
   backface-visibility: hidden;
 }
 
 .project-description::before {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
+  top: 2.4rem;
+  right: 2.4rem;
+  bottom: 2.4rem;
+  left: 2.4rem;
   border: 2px solid #fff;
-  box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
-  content: '';
+  box-shadow: 0 0 0 2.4rem rgba(255, 255, 255, 0.2);
+  content: "";
   opacity: 0;
   transition: opacity 0.35s, transform 0.35s;
   transform: scale3d(1.4, 1.4, 1);
 }
 
 .project-card-title {
-  font-family: 'Lato', sans-serif;
-  font-size: 4.3rem;
-  margin: 20% 0 10px 0;
+  font-family: "Lato", sans-serif;
   transition: transform 0.35s;
   margin: 0;
 }
 
 .project-card-sub-title {
-  font-size: 2.074rem;
-  padding: 1em;
   opacity: 0;
   transition: opacity 0.35s, transform 0.35s;
   transform: scale(1.5);
-  margin: 0;
 }

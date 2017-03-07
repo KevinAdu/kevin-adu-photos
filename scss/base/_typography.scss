@@ -6,41 +6,33 @@ h4,
 .h2,
 .h3,
 .h4 {
-  font-family: 'Lato', sans-serif;
+  font-family: $header-font-family;
   font-weight: normal;
-  margin: 0;
+  line-height: $header-line-height;
+  margin: $header-margin-bottom;
 }
 
 h1,
 .h1 {
-  font-size: 5.16em;
-  line-height: 1.2em;
-  margin-bottom: 1.2em;
+  font-size: $h1-font-size;
 }
 
 h2,
 .h2 {
-  font-size: 3.583rem;
-  line-height: 1.2em;
-  margin-bottom: 1.2em;
+  font-size: $h2-font-size;
 }
 
 h3,
 .h3 {
-  font-size: 1.44rem;
-  line-height: 1.2em;
-  margin-bottom: 0.694em;
+  font-size: $h3-font-size;
 }
 
 h4,
 .h4 {
-  font-size: 1.2rem;
-  line-height: 1.2em;
-  margin-bottom: 0.694em;
+  font-size: $h4-font-size;
 }
 
 p {
-  margin: 0;
-  margin-bottom: 1.44em;
-  line-height: 1.44em;
+  font-size: $paragraph-font-size;
+  margin: $paragraph-margin-bottom;
 }

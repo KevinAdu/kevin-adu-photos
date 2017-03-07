@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: $base-font-size;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -19,11 +19,11 @@ body {
   min-height: 100vh;
   font-family: 'Merriweather', serif;
   text-align: center;
-  background: #fafafa;
-  color: #212121;
+  background: $body-background-color;
+  color: $body-color;
   margin: 0 auto;
 }
 
 section {
-  padding: 2.4rem;
+  padding: $section-padding;
 }

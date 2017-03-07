@@ -1,8 +1,9 @@
 .nav {
-  height: 4.8rem;
+  height: $navbar-height;
   display: flex;
   flex-flow: column;
   justify-content: center;
+  background-color: $nav-background-color;
 }
 
 .nav-menu {
@@ -10,17 +11,16 @@
   padding: 0;
   display: flex;
   justify-content: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.44rem;
+  font-size: $nav-menu-font-size;
 }
 
 .nav-item {
   list-style: none;
-  margin-right: 2rem;
+  margin: $nav-item-margin;
 
   > a {
     text-decoration: none;
-    color: 212121;
+    color: $body-color;
   }
 
   &:last-child {

@@ -1,0 +1,75 @@
+//1. Global
+//2. Typography
+//3. Project Card
+//13. Nav
+
+//1. Global
+// --------
+
+$body-background-color: #fafafa !default;
+$body-color: #212121 !default;
+$global-max-width: 1280px !default;
+$section-padding: 2.4rem !default;
+
+//2. Typography
+// ------------
+
+$serif-font-family: "Merriweather", serif !default;
+$sans-serif-font-family: "Lato", sans-serif !default;
+
+$base-font-size: 14px !default;
+$base-line-height: 1.4 !default;
+
+$header-font-family: $sans-serif-font-family;
+$header-margin-bottom: 0 0 1rem !default;
+$header-line-height: 1.2 !default;
+
+$paragraph-margin-bottom: 0 0 1.44rem !default;
+
+$h1-font-size: 5.16rem !default;
+$h2-font-size: 3.583rem !default;
+$h3-font-size: 1.44rem !default;
+$h4-font-size: 1.2rem !default;
+$paragraph-font-size: 1rem !default;
+
+// // 13. Navs
+// // --------
+$nav-background-color: #fff !default;
+$navbar-height: 4.8rem !default;
+$nav-menu-font-size: 1.44rem !default;
+$nav-item-margin: 0 2rem 0 0 !default;
+
+// 3. Project Cards
+// --------
+
+$project-card-background-color: #030c17 !default;
+// $card-border: 1px solid $french-grey !default;
+// $card-margin-bottom: 1.5rem !default;
+//
+// $card-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.4) !default;
+// $card-content-shadow: linear-gradient(to bottom, #d3d3de 0, #e4e4eb 20%, #fcfcff 100%) !default;
+// $card-shadow-size: 100% 7px !default;
+//
+// $card-content-padding: 1rem 1.5rem !default;
+// $card-content-medium-padding: 1rem 0.5rem !default;
+// $card-content-border: $card-border !default;
+//
+// $card-header-background-color: $mobster !default;
+// $card-header-background-gradient: none !default;
+// $card-header-font-size: $h2-font-size !default;
+// $card-header-padding: 0 1.5rem !default;
+// $card-header-color: $pure-white !default;
+// $card-header-height: 2.6538rem !default;
+//
+// $card-error-header-background-color: $danger-color !default;
+// $card-error-content-background-color: $white !default;
+// $card-error-content-color: $black-russian !default;
+//
+// $card-large-header-font-size: $h1-font-size !default;
+// $card-large-header-background-color: $card-header-background-color !default;
+// $card-header-background-gradient: none !default;
+// $card-small-header-font-size: $h3-font-size !default;
+// $card-large-header-height: 3.0385rem !default;
+// $card-small-header-height: 2.4231rem !default;
+//
+// $card-button-icon-font-size: 1.5rem !default;
