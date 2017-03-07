@@ -4,11 +4,8 @@ header
       li.nav-item
         a(href="/photos.html") Photos
       li.nav-item
-        a About Me
-      li.nav-item
-        a Contact Me
+        a(href="/about.html") About Me
 main
-  section
-    .l-3-column-grid
-      for image in public.images._contents
-        img.photo(src="images/#{ image }")
+  .l-3-column-grid
+    for image in public.images._contents
+      img.photo(src="images/#{ image }")
