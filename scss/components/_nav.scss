@@ -18,6 +18,11 @@
   list-style: none;
   margin-right: 2rem;
 
+  > a {
+    text-decoration: none;
+    color: 212121;
+  }
+
   &:last-child {
     margin-right: 0;
   }

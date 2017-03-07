@@ -3,6 +3,7 @@
   cursor: pointer;
   overflow: hidden;
   background: #030c17;
+  text-align: center;
 
   &:hover {
     .project-card-title {
@@ -64,7 +65,6 @@
 }
 
 .project-description {
-  text-align: center;
   color: #fafafa;
   position: absolute;
   top: 0;
@@ -86,7 +86,7 @@
   content: '';
   opacity: 0;
   transition: opacity 0.35s, transform 0.35s;
-  transform: scale3d(1.4,1.4,1);
+  transform: scale3d(1.4, 1.4, 1);
 }
 
 .project-card-title {
