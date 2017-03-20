@@ -1,22 +1,10 @@
-.l-2-column-grid {
+.l-1-column-grid {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 
   > figure {
-    height: 36vh;
     flex-basis: 100%;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 700px) {
-  .l-2-column-grid {
-    > figure {
-      flex-basis: calc(50% - 3.6rem);
-      margin: 1.8rem;
-    }
+    height: 24vh;
   }
 }
 
