@@ -2,7 +2,7 @@
   cursor: pointer;
   text-align: center;
   position: relative;
-  padding: 1.8rem 1.2rem 4.8rem 1.2rem;
+  padding: 1.8rem 1.2rem 4.8rem;
   background-color: #f9fefd;
   margin-bottom: 9rem;
   box-shadow: 0 3px 6px rgba(0, 0, 20, 0.16), 0 3px 6px rgba(0, 0, 20, 0.23);
@@ -10,6 +10,10 @@
 
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    .project-card-image {
+      filter: none;
+    }
   }
 }
 
@@ -19,6 +23,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  filter: sepia(22%) brightness(110%) contrast(90%) saturate(75%);
+  transition: filter 0.2s linear;
 }
 
 .project-tokyo {
