@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-around;
 
   > figure {
     flex-basis: 100%;
@@ -14,7 +15,7 @@
 @media (min-width: 700px) {
   .l-2-column-grid {
     > figure {
-      flex-basis: 50%;
+      flex-basis: 45%;
     }
   }
 }
