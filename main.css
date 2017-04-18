@@ -127,7 +127,8 @@ p {
       flex-flow: column;
   -ms-flex-pack: center;
       justify-content: center;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  font-family: "Lato", sans-serif; }
 
 .nav-menu {
   margin: 0;
@@ -186,12 +187,13 @@ p {
 
 .project-description {
   color: #121212;
-  font-family: "Lato", sans-serif;
   position: absolute;
-  z-index: 2;
   bottom: -5.972rem;
   width: 100%;
   text-align: center; }
+
+.project-card-title {
+  font-family: "Caveat", cursive; }
 
 .photo {
   background-repeat: no-repeat;
