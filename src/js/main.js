@@ -1,6 +1,3 @@
-/*jshint esversion: 6 */
-
 (() => {
-  let msg = 'hello-world';
-  console.log(msg);
+  lightGallery(document.getElementById('ul-li'));
 })();

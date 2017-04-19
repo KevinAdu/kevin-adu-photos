@@ -25,8 +25,9 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  list-style-type: none;
 
-  > img {
+  img {
     height: 36vh;
     flex-basis: 100%;
     justify-content: center;
@@ -36,7 +37,7 @@
 
 @media (min-width: 700px) {
   .l-3-column-grid {
-    > img {
+    img {
       flex-basis: 33%;
     }
   }

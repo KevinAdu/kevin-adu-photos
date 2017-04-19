@@ -11,7 +11,8 @@ gulp.task('sass', function () {
   ])
   .pipe(sass({
     includePaths: [
-      './node_modules/normalize-scss/sass'
+      './node_modules/normalize-scss/sass',
+      './node_modules/lightgallery.js/src/sass'
     ],
     style: 'expanded'
   }).on('error', sass.logError))

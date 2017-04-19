@@ -12,7 +12,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('develop', function() {
-  sequence('clean', 'copy', 'sass-lint', 'sass', 'pug', 'javascript', 'server');
+  sequence('clean', 'copy', 'images', 'sass-lint', 'sass', 'pug', 'javascript', 'server');
 });
 
 gulp.task('default', ['develop'], function() {

@@ -5,6 +5,7 @@ var uglify = require('gulp-uglify');
 
 gulp.task('javascript', function() {
   gulp.src([
+    './node_modules/lightgallery.js/dist/js/lightgallery.min.js',
     './src/js/main.js'
   ])
   .pipe(babel())
