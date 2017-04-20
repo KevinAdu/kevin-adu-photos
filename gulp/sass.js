@@ -20,5 +20,5 @@ gulp.task('sass', function () {
     browsers: browserVersions
   }))
   .pipe(concat('main.css'))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./dist/css/'));
 });

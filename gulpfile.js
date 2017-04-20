@@ -6,7 +6,7 @@ var browser = require('browser-sync').create();
 
 gulp.task('server', function() {
   browser.init({
-    server: true,
+    server: './dist',
     port: 1444
   });
 });

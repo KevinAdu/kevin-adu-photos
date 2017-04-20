@@ -14,5 +14,5 @@ gulp.task('images', function () {
       progressive: true,
       interlaced: true
     }))
-    .pipe(gulp.dest('images/'));
+    .pipe(gulp.dest('./dist/images/'));
 });

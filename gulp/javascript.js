@@ -11,5 +11,5 @@ gulp.task('javascript', function() {
   .pipe(babel())
   .pipe(concat('main.min.js'))
   .pipe(uglify({preserveComments: 'some'}))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./dist/js/'));
 });

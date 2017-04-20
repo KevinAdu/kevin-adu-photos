@@ -6,5 +6,5 @@ gulp.task('pug', function buildHTML() {
   .pipe(pug({
     // Your options in here.
   }))
-  .pipe(gulp.dest('./'));
+  .pipe(gulp.dest('./dist/'));
 });
