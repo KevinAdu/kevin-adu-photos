@@ -3,6 +3,8 @@ extends layout
 block content
   include header
   main
-    .l-3-column-grid
-      img(src='images/miyajima-relaxing-deer.jpg')
-      img(src='images/torii.jpg')
+    ul#ul-li.l-3-column-grid
+      li(data-src='images/miyajima-relaxing-deer.jpg')
+        img(src='images/miyajima-relaxing-deer.jpg')
+      li(data-src='images/torii.jpg')
+        img(src='images/torii.jpg')
