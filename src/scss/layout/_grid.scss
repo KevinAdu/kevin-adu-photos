@@ -24,19 +24,17 @@
   flex-wrap: wrap;
   flex-direction: row;
   list-style-type: none;
+  justify-content: space-around;
 
-  img {
-    height: 36vh;
-    flex-basis: 100%;
-    justify-content: center;
-    flex-direction: column;
+  li {
+    width: calc(100% - 0.25rem);
   }
 }
 
 @media (min-width: 700px) {
   .l-3-column-grid {
-    img {
-      flex-basis: 33%;
+    li {
+      width: calc(33% - 0.25rem);
     }
   }
 }
