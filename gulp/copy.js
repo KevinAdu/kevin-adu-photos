@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sequence = require('run-sequence');
 
 gulp.task('copy:fonts', function() {
-  return gulp.src(['node_modules/lightgallery.js/dist/fonts/**/*'])
+  return gulp.src(['node_modules/lightgallery.js/dist/fonts/**/*', 'src/fonts/**/*'])
   .pipe(gulp.dest('./dist/fonts/'));
 });
 
