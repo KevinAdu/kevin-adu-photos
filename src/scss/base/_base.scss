@@ -17,11 +17,12 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Merriweather', serif;
+  font-family: 'Lato', serif;
   font-weight: 300;
   background: $body-background-color;
   color: $body-color;
   margin: 0 auto;
+  position: relative;
 }
 
 figure {

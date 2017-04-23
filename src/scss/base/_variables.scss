@@ -7,7 +7,7 @@
 // --------
 
 $body-background-color: #fafafa !default;
-$body-color: #fafafa !default;
+$body-color: #121212 !default;
 $global-max-width: 1280px !default;
 
 //2. Typography
@@ -31,14 +31,14 @@ $h3-font-size: 1.44rem !default;
 $h4-font-size: 1.2rem !default;
 $paragraph-font-size: 1rem !default;
 
-// // 13. Navs
+// // 3. Navs
 // // --------
 $nav-background-color: $body-background-color !default;
 $navbar-height: 5rem !default;
 $nav-logo-font-size: 2.986rem !default;
 $nav-menu-font-size: 1.44rem !default;
 $nav-item-margin: 0 2rem 0 0 !default;
-$nav-color: #121212;
 
-// 3. Project Cards
+// 4. Footer
 // --------
+$footer-height: 5rem !default;
