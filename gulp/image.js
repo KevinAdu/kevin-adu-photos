@@ -4,12 +4,6 @@ var imagemin = require('gulp-imagemin');
 
 gulp.task('images', function () {
   gulp.src('src/images/**/*.jpg')
-    .pipe(imageResize({
-      width: 1200,
-      height: 800,
-      crop: false,
-      upscale: false,
-    }))
     .pipe(imagemin({
       progressive: true,
       interlaced: true
