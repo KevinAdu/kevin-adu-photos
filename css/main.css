@@ -710,7 +710,7 @@ html {
   box-sizing: inherit; }
 
 ::-webkit-scrollbar {
-  width: 0px; }
+  width: 0; }
 
 body {
   min-height: 100vh;
@@ -767,11 +767,34 @@ h4,
   font-size: 1.2rem; }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0 0 1.44rem; }
 
 small {
   font-size: 1rem; }
+
+.l-2-3-column-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .l-2-3-column-grid > img {
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: calc(100% - 6rem); }
+  .l-2-3-column-grid > div {
+    width: calc(100% - 6rem); }
+
+@media (min-width: 700px) {
+  .l-2-3-column-grid {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .l-2-3-column-grid > img {
+      width: calc(33% - 6rem); }
+    .l-2-3-column-grid > div {
+      width: calc(66% - 6rem); } }
 
 .l-2-column-grid {
   display: -ms-flexbox;
@@ -839,7 +862,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  cursor: pointer;
   width: 100%;
   height: calc(100vh - 5rem);
   animation: zoom-in 18s ease-out; }
@@ -956,6 +978,19 @@ footer {
   width: 100%;
   margin: 0.125rem;
   height: 36vh; }
+
+.about-me {
+  padding: 3rem 0; }
+  .about-me img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 35%;
+    height: 80vh;
+    max-height: 70vh;
+    margin: 0 3rem; }
+  .about-me div {
+    margin: 0 3rem; }
 
 .clearfix::before, .clearfix::after {
   content: " ";
