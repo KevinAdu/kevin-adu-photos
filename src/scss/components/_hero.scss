@@ -26,10 +26,10 @@
       transform: scale(1);
     }
   }
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  cursor: pointer;
   width: 100%;
   height: calc(100vh - #{$navbar-height});
   animation: zoom-in 18s ease-out;
