@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &.no-logo {
+    justify-content: center;
+  }
 }
 
 .nav-logo {
