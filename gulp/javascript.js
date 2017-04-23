@@ -6,7 +6,8 @@ var uglify = require('gulp-uglify');
 gulp.task('javascript', function() {
   gulp.src([
     './node_modules/lightgallery.js/dist/js/lightgallery.min.js',
-    './src/js/main.js'
+    './node_modules/lg-thumbnail.js/dist/lg-thumbnail.min.js',
+    './src/js/main.js',
   ])
   .pipe(babel())
   .pipe(concat('main.min.js'))

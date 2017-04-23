@@ -44,6 +44,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "lg-thumbnail.js": "^1.0.0",
     "lightgallery.js": "^1.0.1"
   }
 }

@@ -19,7 +19,6 @@
 
   > a {
     text-decoration: none;
-    color: $nav-color;
   }
 }
 
@@ -34,11 +33,10 @@
   list-style: none;
   margin: $nav-item-margin;
   border-bottom: 1px solid transparent;
-  transition: border-color 3s ease;
+  transition: border-color 0.8s ease;
 
   > a {
     text-decoration: none;
-    color: $nav-color;
   }
 
   &:last-child {

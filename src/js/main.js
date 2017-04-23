@@ -1,3 +1,5 @@
 (() => {
-  lightGallery(document.getElementById('ul-li'));
+  lightGallery(document.getElementById('ul-li'), {
+    download: false,
+  });
 })();
