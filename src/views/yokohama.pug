@@ -4,16 +4,16 @@ block content
   include header
   main
     ul#ul-li.l-3-column-grid
-      li(data-src='images/bandobashi-park.jpg')
-        img.photo(src='images/bandobashi-park.jpg')
-      li(data-src='images/paifang.jpg')
-        img.photo(src='images/paifang.jpg')
-      li(data-src='images/hidden-cat.jpg')
-        img.photo(src='images/hidden-cat.jpg')
-      li(data-src='images/zen.jpg')
-        img.photo(src='images/zen.jpg')
-      li(data-src='images/yokohama-scenery.jpg')
-        img.photo(src='images/yokohama-scenery.jpg')
-      li(data-src='images/yokohama-sunset.jpg')
-        img.photo(src='images/yokohama-sunset.jpg')
+      li.photo(data-src='images/bandobashi-park.jpg' data-msg="Local Park in Yokohama")
+        img(src='images/bandobashi-park.jpg' alt="Local Park in Yokohama")
+      li.photo(data-src='images/paifang.jpg' data-msg="Paifang")
+        img(src='images/paifang.jpg' alt="Paifang")
+      li.photo(data-src='images/hidden-cat.jpg' data-msg="Peek a Boo!")
+        img(src='images/hidden-cat.jpg' alt="Peek a Boo!")
+      li.photo(data-src='images/zen.jpg' data-msg="Zen")
+        img(src='images/zen.jpg' alt="Zen")
+      li.photo(data-src='images/yokohama-scenery.jpg' data-msg="Overlook of Yokohama City")
+        img(src='images/yokohama-scenery.jpg' alt="Overlook of Yokohama City")
+      li.photo(data-src='images/yokohama-sunset.jpg' data-msg="Sunset")
+        img(src='images/yokohama-sunset.jpg' alt="Sunset")
   include footer

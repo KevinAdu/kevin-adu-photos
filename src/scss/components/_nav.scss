@@ -32,7 +32,7 @@
 .nav-item {
   list-style: none;
   margin: $nav-item-margin;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px dotted transparent;
   transition: border-color 0.8s ease;
 
   > a {
@@ -44,6 +44,6 @@
   }
 
   &:hover {
-    border-bottom: 1px solid #bc002d;
+    border-bottom: 1px dotted #bc002d;
   }
 }

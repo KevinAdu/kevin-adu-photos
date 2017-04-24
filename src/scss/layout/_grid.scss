@@ -58,14 +58,14 @@
   justify-content: space-around;
 
   li {
-    width: calc(100% - 0.25rem);
+    width: calc(100% - 0.5rem);
   }
 }
 
 @media (min-width: 700px) {
   .l-3-column-grid {
     li {
-      width: calc(33% - 0.25rem);
+      width: calc(33% - 0.5rem);
     }
   }
 }

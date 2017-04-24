@@ -4,10 +4,10 @@ block content
   include header
   main
     ul#ul-li.l-3-column-grid
-      li(data-src='images/tokyo-river.jpg')
-        img.photo(src='images/tokyo-river.jpg')
-      li(data-src='images/shinjuku-ninnin.jpg')
-        img.photo(src='images/shinjuku-ninnin.jpg')
-      li(data-src='images/autumn-tokyo-flower.jpg')
-        img.photo(src='images/autumn-tokyo-flower.jpg')
+      li.photo(data-src='images/tokyo-river.jpg' data-msg="City life by the Autumn River")
+        img(src='images/tokyo-river.jpg' alt="City life by the Autumn River")
+      li.photo(data-src='images/shinjuku-ninnin.jpg' data-msg="Ninnin in Shinjuku")
+        img(src='images/shinjuku-ninnin.jpg' alt="Ninnin in Shinjuku")
+      li.photo(data-src='images/autumn-tokyo-flower.jpg' data-msg="Dusk Flower")
+        img(src='images/autumn-tokyo-flower.jpg' alt="Dusk Flower")
   include footer
