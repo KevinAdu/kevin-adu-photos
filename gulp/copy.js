@@ -11,7 +11,11 @@ gulp.task('copy:favicon', function() {
   .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('copy:cname', function() {
+  return gulp.src(['CNAME'])
+  .pipe(gulp.dest('./dist/'));
+});
+
 gulp.task('copy', function() {
-  sequence('copy:fonts',
-           'copy:favicon');
+  sequence('copy:fonts', 'copy:favicon', 'copy:cname');
 });
