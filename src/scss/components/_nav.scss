@@ -6,9 +6,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   &.no-logo {
+    background-color: transparent;
     justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
   }
 }
 
