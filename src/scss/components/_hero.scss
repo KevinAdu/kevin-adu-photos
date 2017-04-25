@@ -13,6 +13,7 @@
     left: 50%;
     transform: translateX(-50%);
     top: calc(50% - #{$navbar-height});
+    width: 100%;
   }
 }
 
@@ -33,4 +34,11 @@
   width: 100%;
   height: calc(100vh - #{$navbar-height});
   animation: zoom-in 18s ease-out;
+}
+
+
+@media (max-width: 620px) {
+  .hero > h1 {
+    font-size: 3.583rem;
+  }
 }

@@ -5,6 +5,12 @@ html {
   overflow-x: hidden;
 }
 
+@media (max-width: 820px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 *,
 *::before,
 *::after {
