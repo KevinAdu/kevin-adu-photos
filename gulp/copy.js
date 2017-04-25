@@ -17,7 +17,7 @@ gulp.task('copy:favicon', function() {
 });
 
 gulp.task('copy:cname', function() {
-  return gulp.src(['CNAME'])
+  return gulp.src(['./CNAME'])
   .pipe(gulp.dest('./dist/'));
 });
 
