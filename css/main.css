@@ -738,8 +738,10 @@ ul {
   padding: 0;
   margin: 0; }
 
-a:visited {
+a {
   color: #121212; }
+  a:visited {
+    color: #121212; }
 
 h1,
 h2,
@@ -908,12 +910,12 @@ src: url("../font/fontello.svg?38689064#fontello") format("svg");
   text-align: center;
   position: relative;
   overflow: hidden;
-  height: calc(100vh - 5rem); }
+  height: calc(100vh); }
   .hero > h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: calc(50% - 5rem);
+    top: calc(50% - 5.16rem);
     width: 100%; }
 
 .hero-img {
@@ -921,8 +923,8 @@ src: url("../font/fontello.svg?38689064#fontello") format("svg");
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: calc(100vh - 5rem);
-  animation: zoom-in 18s ease-out; }
+  height: calc(100vh);
+  animation: zoom-in 20s linear; }
 
 @keyframes zoom-in {
   0% {
@@ -944,10 +946,16 @@ src: url("../font/fontello.svg?38689064#fontello") format("svg");
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  position: relative; }
   .nav.no-logo {
+    background-color: transparent;
     -ms-flex-pack: center;
-        justify-content: center; }
+        justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2; }
 
 .nav-logo {
   font-size: 2.986rem;
