@@ -6,6 +6,11 @@ gulp.task('copy:fonts', function() {
   .pipe(gulp.dest('./dist/fonts/'));
 });
 
+gulp.task('copy:gif', function() {
+  return gulp.src(['node_modules/lightgallery.js/dist/img/loading.gif'])
+  .pipe(gulp.dest('./dist/img/'));
+});
+
 gulp.task('copy:favicon', function() {
   return gulp.src(['src/images/favicon.ico'])
   .pipe(gulp.dest('./dist/'));
@@ -17,5 +22,5 @@ gulp.task('copy:cname', function() {
 });
 
 gulp.task('copy', function() {
-  sequence('copy:fonts', 'copy:favicon', 'copy:cname');
+  sequence('copy:fonts', 'copy:gif', 'copy:favicon', 'copy:cname');
 });

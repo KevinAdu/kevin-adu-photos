@@ -14,7 +14,7 @@ gulp.task('sass', function () {
       './node_modules/normalize-scss/sass',
       './node_modules/lightgallery.js/src/sass'
     ],
-    style: 'expanded'
+    outputStyle: 'compressed'
   }).on('error', sass.logError))
   .pipe(autoprefixer({
     browsers: browserVersions
