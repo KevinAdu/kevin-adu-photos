@@ -48,6 +48,8 @@ ul {
 }
 
 a {
+  color: $body-color;
+
   &:visited {
     color: $body-color;
   }
