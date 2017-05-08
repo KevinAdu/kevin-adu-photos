@@ -44,6 +44,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "lazysizes": "^3.0.0",
     "lg-thumbnail.js": "^1.0.0",
     "lightgallery.js": "^1.0.1"
   }
