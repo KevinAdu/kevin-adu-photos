@@ -22,7 +22,7 @@ gulp.task('build', function() {
 gulp.task('default', ['develop'], function() {
   gulp.watch(['src/scss/**/*.scss'], ['sass-lint', 'sass', browser.reload]);
   gulp.watch(['src/views/**/*.pug'], ['pug', browser.reload]);
-  gulp.watch(['src/js/**/*.js'], ['pug', browser.reload]);
+  gulp.watch(['src/js/**/*.js'], ['javascript', browser.reload]);
 });
 
 var deploy      = require('gulp-gh-pages');
