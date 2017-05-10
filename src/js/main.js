@@ -4,12 +4,14 @@
   });
 
   window.addEventListener('load', () => {
-    const myProjectsLink = document.querySelector('.no-logo a[href*="#my-projects"]');
-    const projectSection = document.getElementById('my-projects');
+    if (document.querySelector('.no-logo a[href*="#my-projects"]')) {
+      const myProjectsLink = document.querySelector('.no-logo a[href*="#my-projects"]');
+      const projectSection = document.getElementById('my-projects');
 
-    myProjectsLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      projectSection.scrollIntoView({ behavior: 'smooth' });
-    });
+      myProjectsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        projectSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
   });
 })();

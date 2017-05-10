@@ -7,10 +7,12 @@ gulp.task('javascript', function() {
   gulp.src([
     './node_modules/lightgallery.js/dist/js/lightgallery.min.js',
     './node_modules/lg-thumbnail.js/dist/lg-thumbnail.min.js',
+    './node_modules/smoothscroll-polyfill/dist/smoothscroll.js',
+    './node_modules/lazysizes/lazysizes.js',
     './src/js/main.js',
   ])
   .pipe(babel())
   .pipe(concat('main.min.js'))
-  .pipe(uglify({preserveComments: 'some'}))
+  .pipe(uglify({ preserveComments: 'some' }))
   .pipe(gulp.dest('./dist/js/'));
 });
