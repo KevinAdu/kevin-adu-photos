@@ -4,7 +4,11 @@ block content
   include header-hero
   main
     section.hero
-      img.hero-img(src="images/miyajima-hero.jpg")
+      picture
+        source(media="(max-width: 499px)" srcset="images/miyajima-hero-400w.jpg")
+        source(media="(min-width: 799px)" srcset="images/miyajima-hero-700w.jpg")
+        source(media="(min-width: 800px)" srcset="images/miyajima-hero.jpg")
+        img.hero-img(src="images/miyajima-hero.jpg" alt="Hero image of the Torii gate at Miyajima")
       h1 Kevin Adu-Sarkodie
     section#my-projects
       .l-2-column-grid
