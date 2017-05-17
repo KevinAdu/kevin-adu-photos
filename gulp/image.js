@@ -4,9 +4,11 @@ var imagemin = require('gulp-imagemin');
 
 gulp.task('images', function () {
   gulp.src('src/images/**/*.jpg')
-    .pipe(imagemin({
-      progressive: true,
-      interlaced: true
-    }))
-    .pipe(gulp.dest('./dist/images/'));
+  .pipe(imagemin([
+    imagemin.jpegtran({ progressive: true }),
+  ],
+  {
+    verbose: true,
+  }))
+  .pipe(gulp.dest('./dist/images/'));
 });
