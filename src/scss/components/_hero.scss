@@ -44,13 +44,17 @@
 }
 
 @media (max-width: 800px) {
-  @keyframes zoom-in {
-    0% {
-      transform: scale(1.2);
+  .hero-img {
+    @keyframes zoom-in {
+      0% {
+        transform: scale(1.2);
+      }
+
+      100% {
+        transform: scale(1);
+      }
     }
 
-    100% {
-      transform: scale(1);
-    }
+    animation: zoom-in 15s linear;
   }
 }
