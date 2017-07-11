@@ -12,11 +12,11 @@ gulp.task('server', function() {
 });
 
 gulp.task('develop', function() {
-  sequence('clean', 'copy', 'images', 'sass-lint', 'sass', 'pug', 'javascript', 'server');
+  sequence('clean', 'copy', 'sass-lint', 'sass', 'pug', 'javascript', 'server');
 });
 
 gulp.task('build', function() {
-  sequence('clean', 'copy', 'images', 'sass-lint', 'sass', 'pug', 'javascript');
+  sequence('clean', 'copy', 'sass-lint', 'sass', 'pug', 'javascript');
 });
 
 gulp.task('default', ['develop'], function() {
