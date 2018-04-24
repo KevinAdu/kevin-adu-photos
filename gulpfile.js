@@ -12,11 +12,11 @@ gulp.task('server', function() {
 });
 
 gulp.task('develop', function() {
-  sequence('clean', 'copy', 'sass-lint', 'sass', 'pug', 'javascript', 'server');
+  sequence('clean', 'copy', 'sass-lint', 'sass', 'pug', 'javascript', 'favicon', 'server');
 });
 
 gulp.task('build', function() {
-  sequence('clean', 'copy', 'sass-lint', 'sass', 'pug', 'javascript');
+  sequence('clean', 'copy', 'sass-lint', 'sass', 'pug', 'javascript', 'favicon');
 });
 
 gulp.task('default', ['develop'], function() {
@@ -25,9 +25,9 @@ gulp.task('default', ['develop'], function() {
   gulp.watch(['src/js/**/*.js'], ['javascript', browser.reload]);
 });
 
-var deploy      = require('gulp-gh-pages');
+var deploy = require('gulp-gh-pages');
 
 gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
+  return gulp.src('./dist/**/*')
     .pipe(deploy())
 });

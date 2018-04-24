@@ -11,16 +11,11 @@ gulp.task('copy:gif', function() {
   .pipe(gulp.dest('./dist/img/'));
 });
 
-gulp.task('copy:favicon', function() {
-  return gulp.src(['src/images/favicon.ico'])
-  .pipe(gulp.dest('./dist/'));
-});
-
 gulp.task('copy:cname', function() {
   return gulp.src(['./CNAME'])
   .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('copy', function() {
-  sequence('copy:fonts', 'copy:gif', 'copy:favicon', 'copy:cname');
+  sequence('copy:fonts', 'copy:gif', 'copy:cname');
 });
