@@ -38,7 +38,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  filter: sepia(22%) brightness(110%) contrast(90%) saturate(75%);
+  // filter: sepia(22%) brightness(110%) contrast(90%) saturate(75%);
   box-shadow: inset 3px 3px 6px rgba(0, 0, 20, 0.16), inset 3px 3px 6px rgba(0, 0, 20, 0.23);
   transition: filter 0.2s linear;
 }
